@@ -77,8 +77,7 @@ theorem q4_proof :
   decide
 
 -- Question 5
--- ∠BNC = ∠BAC = 80 deg by the inscribed angle theorem, since A, N lie on the same side of BC and
--- both see arc BC. NB = NC since N is equidistant from B, C (on the perpendicular bisector),
+-- NB = NC since N is equidistant from B, C (on the perpendicular bisector),
 -- making triangle NBC isosceles.
 theorem q5_proof (angleBNC angleNBC : ℕ)
     (h_sum : angleBNC + 2 * angleNBC = 180)
@@ -111,7 +110,6 @@ theorem q8_proof (x y : ℕ) (hx : x = 150) (hy : y = 30) : x / y = 5 := by
   rw [hx, hy]
 
 -- Question 9
--- General fact: digit sum of (2·10^k − 1) is 9k+1.
 -- General fact: digit sum of (2·10^k − 1) is 9k+1.
 theorem digitSum_two_pow_sub_one :
     ∀ k : ℕ, (Nat.digits 10 (2 * 10 ^ k - 1)).sum = 9 * k + 1 := by
